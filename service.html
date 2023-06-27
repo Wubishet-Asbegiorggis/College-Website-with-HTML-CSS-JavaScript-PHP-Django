@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us | College Website</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+        second-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second-content ul {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.second-content li {
+  flex-basis: 32%;
+  margin: 10px 0;
+}
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.first-content,
+.second-content {
+  flex-basis: 45%;
+}
+
+.first-content ul,
+.second-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.first-content ul li,
+.second-content ul li {
+  margin: 10px 0;
+}
+
+.first-content a,
+.second-content a {
+  color: white;
+}
+
+.center-text {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid white;
+}
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 40px;
+  max-width:100%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.about-us img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us p {
+  text-align: justify;
+}
+     .services {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
+
+.service {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.service h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 10px;
+}
+
+.service ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service li {
+  margin-bottom: 5px;
+}
+
+.service li:before {
+  content: "\2022";
+  margin-right: 5px;
+}
+
+
+	</style>
+</head>
+<body>
+	    <header>
+      <nav class="container" id="container">
+        <h1>Wisdom Collage</h1>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Almuni</a></li>
+            <li class="nav-item"><a href="admin.php" class="nav-link">Registration</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link"> Our Service</a></li>
+            <li class="nav-item">
+              <a href="login.php">
+                <button class="reg-bnt" type="submit">Logout</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <hr />
+    </header>
+	 <div class="services">
+  <div class="service">
+    <h2>Academic Programs</h2>
+    <p>At XYZ College, we offer a wide range of academic programs to suit your interests and career goals. Our programs include:</p>
+    <ul>
+      <li>Bachelor's degrees in various fields</li>
+      <li>Associate degrees for career and technical education</li>
+      <li>Certificate programs for specialized skills</li>
+      <li>Continuing education for lifelong learning</li>
+    </ul>
+    <p>We also offer academic support services to help you succeed in your studies, such as tutoring, study groups, and academic advising. Our faculty members are committed to providing a supportive learning environment and helping you achieve your academic goals.</p>
+  </div>
+  <div class="service">
+    <h2>Career Services</h2>
+    <p>We're committed to helping our students succeed in their careers. That's why we offer a variety of career services, including:</p>
+    <ul>
+      <li>Career counseling and coaching</li>
+      <li>Resume and cover letter assistance</li>
+      <li>Job search resources and workshops</li>
+      <li>Networking events with employers</li>
+    </ul>
+    <p>We also partner with local businesses and organizations to provide internship and job opportunities for our students. Our career services team can help you find the right internship or job and prepare for interviews and other career-related events.</p>
+  </div>
+  <div class="service">
+    <h2>Student Life</h2>
+    <p>At XYZ College, we believe that student life is an essential part of the college experience. We offer a range of opportunities for students to get involved and make the most of their time on campus, including:</p>
+    <ul>
+      <li>Student clubs and organizations</li>
+      <li>Leadership development programs</li>
+      <li>Community service projects</li>
+      <li>Intercollegiate athletics</li>
+    </ul>
+    <p>We also provide on-campus housing for students who want to live on campus and be a part of our vibrant community. Our residence halls are staffed by trained professionals who are committed to providing a safe and supportive living environment for our students.</p>
+  </div>
+  <div class="service">
+    <h2>Financial Aid</h2>
+    <p>We understand that paying for college can be a challenge, which is why we offer a variety of financial aid options to help you make college more affordable. Our financial aid services include:</p>
+    <ul>
+      <li>Scholarships and grants</li>
+      <li>Student loans</li>
+      <li>Work-study programs</li>
+      <li>Payment plans</li>
+    </ul>
+    <p>Our financial aid team can help you navigate the financial aid process and find the best options for your situation. We're committed to making college accessible to all students, regardless of financial need.</p>
+  </div>
+</div>
+	<footer>
+  <div class="first-content">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Student Service</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#">Departement</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </div>
+  <div class="second-content">
+    <h3>Important link</h3>
+    <ul>
+      <li>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+      </li >
+    </ul>
+  </div>
+  <div class="center-text">
+    <p>Wisdom collage Alright reserved:2023</p>
+  </div>
+</footer>
+	<script src="script.js"></script>
+</body>
+</html>

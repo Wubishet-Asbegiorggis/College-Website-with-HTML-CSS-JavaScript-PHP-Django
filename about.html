@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us | College Website</title>
+	 <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+        /*
+        second-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second-content ul {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.second-content li {
+  flex-basis: 32%;
+  margin: 10px 0;
+}
+*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+/*
+.first-content,
+.second-content {
+  flex-basis: 45%;
+}
+
+.first-content ul,
+.second-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.first-content ul li,
+.second-content ul li {
+  margin: 10px 0;
+}
+
+.first-content a,
+.second-content a {
+  color: #fff;
+}
+*/
+
+.center-text {
+  flex-basis: 100%;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #333;
+  height: 40px;
+  margin: 0 10px;
+  width: 40px;
+}
+
+.social-icons a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-icons i {
+  font-size: 20px;
+}
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 40px;
+  max-width:100%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.about-us img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us p {
+   font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: justify;
+  max-width: 600px;
+}
+.content-con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-content ul li{
+    list-style: none;
+    padding: 3%;
+    text-align: center;
+}
+.second-content ul li a,.first-content ul li a{
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.second-content ul li{
+    list-style: none;
+}
+.first-content h3{
+    position: relative;
+    margin-bottom: 5px;
+
+}
+.first-content h3::after{
+    content:"";
+    width:60px;
+    background-color: brown;
+    height:4px;
+    position: absolute;
+    left:0;
+    bottom:-6px
+}
+
+	</style>
+</head>
+<body>
+	    <header>
+      <nav class="container" id="container">
+        <h1>Wisdom Collage</h1>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Almuni</a></li>
+            <li class="nav-item"><a href="admin.php" class="nav-link">Registration</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link"> Our Service</a></li>
+            <li class="nav-item">
+              <a href="login.php">
+                <button class="reg-bnt" type="submit">Logout</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <hr />
+    </header>
+	<main>
+		<div class="about-us">
+  <img src="img/about-img.jpg" alt="XYZ College Campus">
+  <div class="content">
+    <h1 style="margin-bottom:10px">About Us</h1>
+    <p >Welcome to XYZ College, where we strive to provide an exceptional education and a vibrant campus community for students from all walks of life.</p>
+    <p>Since our founding in 19XX, we've been committed to creating a supportive and inclusive environment that encourages intellectual curiosity, critical thinking, and personal growth. Our faculty members are experts in their fields, and they're passionate about sharing their knowledge and mentoring students to help them achieve their goals.</p>
+    <p>Our campus is located in the heart of [City/Town], and it's home to a diverse student body from around the world. We offer a wide range of programs and majors, as well as opportunities for research, internships, and study abroad. Whether you're interested in science, business, the arts, or anything in between, you'll find a home at XYZ College.</p>
+    <p>Thank you for considering XYZ College for your educational journey. We look forward to getting to know you!</p>
+  </div>
+</div>
+	</main>
+	<footer>
+        <div class="content-con">
+  <div class="first-content">
+    <h3>About Our Collage</h3>
+    <ul>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Student Service</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="admin.php">Registration</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </div>
+  <div class="social-icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-telegram"></i>
+  </div>
+  <div class="second-content">
+    <h3>Important link</h3>
+    <ul>
+      <li>
+        <a href="#">minstry of education</a>
+        </li>
+        <li>
+        <a href="#">minstry of education</a>
+        </li>
+        <li>
+        <a href="#">minstry of education</a>
+        </li>
+        <li>
+        <a href="#">minstry of education</a>
+        </li>
+        <li>
+        <a href="#">minstry of education</a>
+      </li >
+    </ul>
+  </div>
+  </div>
+  <div class="center-text">
+    <p>Wisdom collage Alright reserved:2023</p>
+  </div>
+</footer>
+	<script src="script.js"></script>
+</body>
+</html>

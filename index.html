@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collage website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #555;
+}
+.second-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second-content ul {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.second-content li {
+  flex-basis: 32%;
+  margin: 10px 0;
+}
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.first-content,
+.second-content {
+  flex-basis: 45%;
+}
+
+.first-content ul,
+.second-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.first-content ul li,
+.second-content ul li {
+  margin: 10px 0;
+}
+
+.first-content a,
+.second-content a {
+  color: white;
+}
+
+.center-text {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid white;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: justify;
+  max-width: 600px;
+}
+
+
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container" id="container">
+        <h1>Wisdom Collage</h1>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Academics</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Almuni</a></li>
+            <li class="nav-item"><a href="admin.php" class="nav-link">Registration</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link"> Our Service</a></li>
+            <li class="nav-item">
+              <a href="login.php">
+                <button class="reg-bnt" type="submit">Logout</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <hr />
+    </header>
+    <section>
+      <main>
+            <section>
+  
+                <img  style ="width:80%;margin:0 auto" src="img/home-img-2.jpg" alt="Collage Image">
+                <p>Welcome to XYZ College!
+
+                        At XYZ College, we strive to provide our students with an exceptional education that prepares them for success in their chosen careers. Our dedicated faculty members are committed to helping students achieve their academic and professional goals, and we offer a wide range of programs and services to support student success.
+
+                        Whether you're interested in pursuing a bachelor's or associate degree, a certificate program, or continuing education, we have the resources and expertise to help you achieve your goals. Our academic programs are designed to be rigorous and challenging, while also providing the support and guidance you need to succeed.
+
+                        In addition to our academic programs, we also offer a variety of career services, student life opportunities, and financial aid resources to help make college more accessible and affordable for all students. Our goal is to provide a comprehensive and inclusive learning environment that supports students in all aspects of their college experience.
+
+                        We invite you to explore our website and learn more about the many programs and services we offer at XYZ College. If you have any questions or would like to speak with one of our admissions counselors, please don't hesitate to reach out. We look forward to helping you achieve your academic and professional goals!</p>
+            </section>
+                </main>
+    </section>
+    <script src="index.js"></script>
+    <footer>
+  <div class="first-content">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Student Service</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#">Departement</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </div>
+  <div class="second-content">
+    <h3>Important link</h3>
+    <ul>
+      <li>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+        <a href="#">minstry of education</a>
+      </li >
+    </ul>
+  </div>
+  <div class="center-text">
+    <p>Wisdom collage Alright reserved:2023</p>
+  </div>
+</footer>
+
+<script>
+  let slideIndex = 0;
+        const slides = document.querySelectorAll("#slider img");
+  
+        function showSlide() {
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slides[slideIndex].classList.add("active");
+        }
+  
+        function nextSlide() {
+          if (slideIndex == slides.length - 1) {
+            slideIndex = 0;
+          } else {
+            slideIndex++;
+          }
+          showSlide();
+        }
+  
+        function prevSlide() {
+          if (slideIndex == 0) {
+            slideIndex = slides.length - 1;
+          } else {
+            slideIndex--;
+          }
+          showSlide();
+        }
+  
+        setInterval(nextSlide, 5000);
+
+//evet 
+
+        let boxes = document.getElementsByClassName("event-box");
+
+for (let i = 0; i < boxes.length; i++) {   
+  boxes[i].addEventListener("click", function() {
+    window.location.href = "detail.html";
+  });
+}
+//show rank
+    
+function showRank() {
+  var nationalRank = 25;
+  var privateRank = 3;
+  var nationalCounter = 0;
+  var privateCounter = 0;
+
+  var nationalInterval = setInterval(function() {
+    if (nationalCounter > nationalRank) {
+      clearInterval(nationalInterval);
+    } else {
+      document.getElementById("national").innerHTML = nationalCounter;
+      nationalCounter++;
+    }
+  }, 50);
+
+  var privateInterval = setInterval(function() {
+    if (privateCounter > privateRank) {
+      clearInterval(privateInterval);
+    } else {
+      document.getElementById("private").innerHTML = privateCounter;
+      privateCounter++;
+    }
+  }, 50);
+}
+
+////////////side menu//
+function toggleSideMenu() {
+  const sideMenu = document.querySelector('.side-menu');
+  const menuBtn = document.querySelector('.menu-btn');
+    if (sideMenu.classList.contains('side-menu-open')) {
+     sideMenu.classList.remove('side-menu-open');
+     sideMenu.classList.add('side-menu-close');
+      menuBtn.innerHTML = '☰';
+     } else {
+     sideMenu.classList.remove('side-menu-close');
+     sideMenu.classList.add('side-menu-open');
+     menuBtn.innerHTML = '×';
+    }
+  }
+</script>
+  </body>
+</html>

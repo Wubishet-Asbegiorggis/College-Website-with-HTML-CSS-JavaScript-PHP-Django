@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Student Services</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+            body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 50px;
+}
+
+img {
+	width: 50%;
+	height: auto;
+	margin-right: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+	flex: 1;
+}
+
+h2 {
+	font-size: 36px;
+	margin-top: 0;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	img {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
+    </style>
+</head>
+<body>
+	<header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Grade Report</a></li>
+        <li><a href="stuRegCourse.php">Course Registration</a>
+        
+      </li>
+        <li><a href="stuService.html">Student Service</a></li>
+         <li><a href="login.php">Logout</a></li>
+         <li>
+         </li>
+      </ul>
+    </nav>
+    <h1>Collage Service</h1>
+  </header>
+	<main>
+		<div class="container">
+			<img src="img/imgser.jpg" alt="College student">
+			<div class="description">
+				<h2>Academic Advising</h2>
+				<p>Our academic advising service provides students with guidance and support throughout their college journey. We offer one-on-one advising sessions to help students create academic plans, select courses, and make progress towards their degree. Our advisors are knowledgeable and experienced in a variety of academic areas, and can assist students with everything from course selection to career planning.</p>
+				<p>We also offer group advising sessions, where students can meet with their peers to discuss academic goals and challenges. Our advisors facilitate these sessions and provide resources and strategies to help students succeed. In addition, we offer workshops and seminars on various topics such as time management, study skills, and test-taking strategies.</p>
+				<p>Our advising service is free to all students and is available throughout the year. We encourage students to meet with our advisors early and often to ensure they stay on track and make the most of their college experience.</p>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
